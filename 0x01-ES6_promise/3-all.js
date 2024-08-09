@@ -1,4 +1,4 @@
-import { createUser, uploadPhoto } from './utils'
+import { createUser, uploadPhoto } from './utils';
 
 export default function handleProfileSignup() {
   Promise.all([createUser(), uploadPhoto()])
