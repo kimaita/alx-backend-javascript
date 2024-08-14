@@ -3,7 +3,7 @@ export default function cleanSet(set, startString) {
   if (startString === '') {
     return '';
   }
-  for (const it of set) {
+  for (const it of set.values()) {
     if (it.startsWith(startString)) {
       str.push(it.substring(startString.length));
     }
