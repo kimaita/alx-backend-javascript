@@ -44,18 +44,14 @@ const port = 1245;
 const requestListener = (req, res) => {
   res.setHeader('Content-Type', 'text/plain');
   switch (req.url) {
-    case '/':
-      res.writeHead(200);
-      res.end('Hello Holberton School!\n');
-      break;
     case '/students':
       res.writeHead(200);
       res.end(`This is the list of our students\n${studentData}`);
       break;
 
     default:
-      res.writeHead(404);
-      res.end('Oops, nothing there!\n');
+      res.writeHead(200);
+      res.end('Hello Holberton School!');
       break;
   }
 };
