@@ -3,3 +3,5 @@ class AppController {
     response.send('Hello Holberton School!');
   }
 }
+
+module.exports = AppController;
